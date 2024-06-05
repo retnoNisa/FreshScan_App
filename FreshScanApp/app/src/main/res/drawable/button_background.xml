@@ -1,0 +1,6 @@
+<!-- res/drawable/button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="10dp" />
+    <solid android:color="#319F5F" />
+    <!-- Ubah nilai ini untuk menyesuaikan kebulatan sudut -->
+</shape>

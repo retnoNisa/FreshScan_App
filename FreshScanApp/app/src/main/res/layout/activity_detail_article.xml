@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <!-- Relative layout to hold the image and back button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <!-- Replace with your image drawable -->
+
+        <ImageView
+            android:id="@+id/img_desc"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sayurbeku" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/iconback" /> <!-- Replace with your back button drawable -->
+
+    </RelativeLayout>
+
+    <!-- ScrollView for the content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Are Frozen Vegetables as Healthy as Fresh? You Might Be Surprised"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The cost of living crisis is affecting how we spend our money. For many people, this means tightening the budget on the weekly supermarket shop.
+One victim may be fresh fruit and vegetables. Data from the Australian Bureau of Statistics (ABS) suggests Australians were consuming fewer fruit and vegetables in 2022–23 than the year before.
+The cost of living is likely compounding a problem that exi"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppinsextralight"
+                android:layout_marginBottom="16dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Favorite button in the bottom right corner, on top of the ScrollView -->
+
+</FrameLayout>

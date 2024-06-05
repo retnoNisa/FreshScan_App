@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <!-- Relative layout to hold the image and back button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/img_desc"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pepper" /> <!-- Replace with your image drawable -->
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/iconback" /> <!-- Replace with your back button drawable -->
+
+    </RelativeLayout>
+
+    <!-- ScrollView for the content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:padding="16dp"
+        android:background="@drawable/detail_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Pepper"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#519259"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pepper, commonly referred to as bell pepper or sweet pepper, is a type of fruit from the Capsicum annuum species. These vibrant vegetables are characterized by their crisp, juicy flesh and come in a variety of colors including green, red, yellow, and orange. Bell peppers are unique among peppers because they are not spicy, making them a versatile ingredient in many culinary dishes."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recipe Recommendation"
+                android:textColor="#519259"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stuffed Bell Peppers (Paprika Isi)"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tutorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredients: Bell peppers, ground beef or chicken, rice, onion, garlic, tomatoes, cheese, seasonings (salt, pepper, oregano).\nInstructions: Cut the tops off the bell peppers and remove the seeds. Sauté the ground meat with onions, garlic, and tomatoes. Mix in rice and seasonings. Stuff the bell peppers with this mixture, top with cheese, and bake until the peppers are tender and the cheese is melted."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Favorite button in the bottom right corner, on top of the ScrollView -->
+
+</FrameLayout>
