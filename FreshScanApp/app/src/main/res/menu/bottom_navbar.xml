@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_scan"
         android:title=""
-        android:icon="@drawable/homeicon" />
+        android:icon="@drawable/scanicon"
+        app:actionLayout="@layout/bottom_nav_item"/>
     <item
-        android:id="@+id/navigation_category"
-        android:title="Category"
-        android:icon="@drawable/scanicon" />
+        android:id="@+id/navigation_article"
+        android:title=""
+        android:icon="@drawable/iconarticle"
+        app:actionLayout="@layout/bottom_nav_item"/>
 </menu>

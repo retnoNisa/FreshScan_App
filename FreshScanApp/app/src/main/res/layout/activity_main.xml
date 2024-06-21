@@ -1,198 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:padding="16dp">
-
-    <ScrollView
-        android:id="@+id/r7epb80l2jks"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#FFFFFFFF"
-        android:fillViewport="true"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/rzc0bfwrfrs"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:fontFamily="@font/poppinssemibold"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Hello!" />
-
-            <TextView
-                android:id="@+id/rym7ro9pexqo"
-                android:textSize="24sp"
-                android:fontFamily="@font/poppinssemibold"
-                android:textColor="#000000"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Explore Your Veggies!" />
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:scrollbars="none"
-                android:id="@+id/horizontalScrollView">
-
-                <LinearLayout
-                    android:layout_width="365dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:id="@+id/linearLayout">
-
-                    <ImageView
-                        android:layout_width="365dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/banner1"
-                        android:scaleType="centerCrop"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginEnd="16dp"/>
-                    <ImageView
-                        android:layout_width="365dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/banner2"
-                        android:scaleType="centerCrop"
-                        android:layout_marginEnd="16dp"/>
-                    <ImageView
-                        android:layout_width="365dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/banner3"
-                        android:scaleType="centerCrop"
-                        android:layout_marginEnd="16dp"/>
-                    <ImageView
-                        android:layout_width="365dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/banner4"
-                        android:scaleType="centerCrop"
-                        android:layout_marginEnd="16dp"/>
-                </LinearLayout>
-            </HorizontalScrollView>
-
-
-            <TextView
-                android:id="@+id/rg3eyuiqu4mj"
-                android:textSize="20sp"
-                android:fontFamily="@font/poppinssemibold"
-                android:textColor="#000000"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Find Your Article" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_gravity="center_horizontal"
-                app:cardElevation="4dp">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageButton
-                        android:id="@+id/article_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/articlepic"
-                        android:background="?android:attr/selectableItemBackground"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Are Frozen Vegetables as Healthy as Fresh? You Might Be Surprised"
-                        android:textColor="#FFFFFF"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/poppinsblack"
-                        android:layout_margin="8dp"/>
-
-                    <Button
-                        android:id="@+id/button_read_more"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Read More"
-                        android:backgroundTint="@color/black_trans"
-                        android:layout_gravity="bottom|end" />
-
-                </FrameLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_gravity="center_horizontal"
-                app:cardElevation="4dp">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageButton
-                        android:id="@+id/article_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/articlepic"
-                        android:background="?android:attr/selectableItemBackground"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Are Frozen Vegetables as Healthy as Fresh? You Might Be Surprised"
-                        android:textColor="#FFFFFF"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/poppinsblack"
-                        android:layout_margin="8dp"/>
-
-                    <Button
-                        android:id="@+id/button_read_more"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Read More"
-                        android:backgroundTint="@color/black_trans"
-                        android:layout_gravity="bottom|end" />
-
-                </FrameLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-
-
-        </LinearLayout>
-    </ScrollView>
+    android:layout_height="match_parent"  >
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
+        android:id="@+id/nav_view"
         android:layout_width="189dp"
         android:layout_height="60dp"
         android:background="@drawable/bottom_nav_background_green"
         app:itemIconTint="@color/white"
         app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/bottom_navbar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navbar"
+        app:itemIconSize="@dimen/bottom_navigation_icon_size" />
+
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
